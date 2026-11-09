@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.5"
+  version: "1.1.0"
 
 package:
   name: flet-platform-assets
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flet-platform-assets/flet_platform_assets-${{ version }}.tar.gz
-  sha256: b3596d63306828b71fbaa063c27e78e8a8d30cc3f8d9eaf90c25e7531541517f
+  sha256: 53c6aa5845c9cfc7dd6f38d731f68fad08c5d643c344409695a88a4b97d4a001
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pillow >=11.3.0
+    - resvg-py >=0.5.0,<0.6
 
 tests:
   - python:
